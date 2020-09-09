@@ -1,0 +1,13 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/1600x900/?<%= @pet.species %>
+);">
+  <div class="container">
+    <h1><%= @pet.name %></h1>
+    <a class="btn btn-primary" href="#">I'm the owner</a>
+  </div>
+</div>
+
+<ul>
+  <li>Species: <%= @pet.species.capitalize %></li>
+  <li>Address: <%= @pet.address %></li>
+  <li>Found <%= @pet.found_days_ago %> days ago</li>
+</ul>
